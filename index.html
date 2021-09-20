@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Médico</title>
+
+    <!-- Link Do font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Link das customizações css  -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo"> <img src="img/cmc.webp" class="logo_img"> Centro Médico Cupecê</a>
+
+
+        <nav class="navbar">
+            <a href="#home"><i class="fas fa-home" style="padding-right: 4px; font-size: 25px;"></i>Home</a>
+            <a href="#servicos"><i class="fas fa-stethoscope"
+                    style="padding-right: 4px; font-size: 25px;"></i>Serviços</a>
+            <a href="#localizacao"><i class="fas fa-map-marker-alt "
+                    style="padding-right:  4px; font-size: 25px;"></i>Localização</a>
+            <a href="#agendamento"> <i class="far fa-calendar-alt"
+                    style="padding-right: 4px; font-size: 25px;"></i>Agendamento</a>
+            <a href="login.html"> <i class="fas fa-sign-in-alt"
+                    style="padding-right: 4px; font-size: 25px;"></i>Login</a>
+        </nav>
+
+        <div id="menu-botao" class="fas fa-bars"></div>
+
+    </header>
+
+    <!-- Fim da Seção header -->
+
+    <!-- Inicio da Seção Home  -->
+
+    <section class="home" id="home">
+
+        <div class="imagem">
+            <img src="img/home_img.webp" alt="">
+        </div>
+
+        <div class="conteudo">
+            <h3 style="text-align: center;">Centro Médico Cupecê</h3>
+            <p>Fundada em 1983, o Centro Médico Cupecê busca oferecer o melhor atendimento aos seus pacientes. Agrega
+                diversas especialidades médicas em um mesmo local, com ambiente e equipe acolhedor. </p>
+
+            <p>Localizada na Região Jardim Jabaquara, em São Paulo, a Clínica possui toda a estrutura necessária para
+                assegurar a comodidade dos pacientes. Nosso espaço oferece estacionamento a 40 metros da clínica , uma
+                equipe médica altamente qualificada, que visa o aumento significativo da qualidade de vida de nossos
+                clientes.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Fim da seção Home -->
+
+    <!-- Inicio da Seção Especialidades Médicas -->
+
+    <section class="servicos" id="servicos">
+
+
+
+        <div class="conteudo">
+            <h3 style="text-align: center; margin-top: -7rem;">Especialidades Médicas </h3>
+
+            <p> Uma especialidade médica é um ramo da prática médica que se concentra em um grupo definido de
+                pacientes,
+                doenças, habilidades ou filosofia.</p>
+
+            <p>O centro médico Cupecê oferece mais de 17 especialidades médicas para seus pacientes.
+            </p>
+
+            <p> Para saber quais elas são além de obter mais detalhes sobre elas, pressione o botão "Selecionar"
+                a
+                seguir e selecione a especialidade desejada.</p>
+
+        </div>
+
+        <div class="conteudo">
+
+            <select class="serv" name="teste" onchange="javascript:mostraInfo(this);">
+                <option value="0" hidden>Selecionar</option>
+                <option value="1">Acupuntura Médica</option>
+                <option value="2">Cardiologia</option>
+                <option value="3">Clínica Médica</option>
+                <option value="4">Cirurgia Geral</option>
+                <option value="5">Cirurgia Cabeça e Pescoço</option>
+                <option value="6">Cirurgia Plástica</option>
+                <option value="7">Dermatologia</option>
+                <option value="8">Fisiatria - tratamento de dor</option>
+                <option value="9">Gastroenterologia</option>
+                <option value="10">Ginecologia e Obstetrícia</option>
+                <option value="11">Medicina Estética</option>
+                <option value="12">Neurologia</option>
+                <option value="13">Otorrinolaringologia</option>
+                <option value="14">Ortopedia</option>
+                <option value="15">Pediatria</option>
+                <option value="16">Psiquiatria</option>
+                <option value="17">Urologia</option>
+            </select>
+
+        </div>
+
+        <!-- Inicio do Serviço Acupuntura Médica-->
+
+        <div class="row">
+
+            <div class="row">
+                <div class="conteudo" id="serv" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/acupuntura.webp"
+                                style="border-radius: 100px; width: 86%; margin-top: 1rem; margin-bottom: 10rem;"
+                                alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -7rem;">Acupuntura Médica </h3>
+                            <p>A acupuntura é uma técnica milenar chinesa que trabalha a harmonização da energia do
+                                indivíduo
+                                através da aplicação de agulhas muito finas no seu corpo. </p>
+
+                            <p>Além dos casos de dor, várias doenças funcionais podem ser tratadas pela acupuntura.
+                                Dentro
+                                da
+                                concepção chinesa, a doença é uma manifestação de desequilíbrio, e a acupuntura seria
+                                uma
+                                forma
+                                de readquirir a harmonia perdida.
+                            </p>
+
+                            <p>Entre as doenças tratáveis pela acupuntura estão: dores em geral, especialmente do
+                                aparelho
+                                músculo-esquelético, gastrite, stress, distúrbios hormonais, insônia, asma, distúrbios
+                                menstruais, paralisia facial, sinusite, incontinência urinária.
+                            </p>
+
+                            <p>Dentre os benefícios da acupuntura estão, a ausência de efeitos colaterais se comparado a
+                                medicamentos, a diminuição do uso de medicamentos tanto para casos agudos quanto para os
+                                de
+                                uso
+                                contínuo, e também em sua segurança.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim do Serviço 1-->
+
+                <!-- Inicio do Serviço 2-->
+                <div class="conteudo" id="serv2" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/cardiologia.webp"
+                                style="border-radius: 100px; width: 90%; margin-bottom: 2rem;" alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -7rem;">Cardiologia </h3>
+                            <p>A cardiologia é o estudo e tratamento de doenças do coração e dos vasos sanguíneos,
+                                dentre os
+                                sintomas que podem indicar um problema cardíaco estão: falta de ar, <span
+                                    style="color: var(--green);">tontura</span>, dores no peito, <span
+                                    style="color: var(--green);">mudança na frequência ou ritmo cardíaco</span> e
+                                pressão
+                                alta.
+                            </p>
+
+                            <p>Além de aconselhar sobre a prevenção de doenças cardíacas, dentre as quais o
+                                cardiologista
+                                podem
+                                realizar o tratamento estão: <span style="color: var(--green);">aterosclerose,</span>
+                                fibrilação
+                                atrial, <span style="color: var(--green);">arritmias,</span> doença cardíaca congênita,
+                                <span style="color: var(--green);">doença coronariana,</span> doença cardíaca
+                                congestiva,
+                                <span style="color: var(--green);">colesterol alto e triglicerídeos,</span> hipertensão,
+                                <span style="color: var(--green);">pericardite,</span> taquicardia ventricular e <span
+                                    style="color: var(--green);">pressão alta ou hipertensão.</span>
+                            </p>
+
+                            <p>Uma pessoa pode precisar consultar um cardiologista mesmo sem sintomas, se tiver
+                                histórico
+                                familiar de doença cardíaca ou colesterol alto, se for ou for fumante, se tiver diabetes
+                                ou
+                                se
+                                estiver iniciando um novo programa de exercícios.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Fim do Serviço 2-->
+
+                <!-- Inicio do Serviço 3-->
+                <div class="conteudo" id="serv3" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/clinica_medica.webp"
+                                style="border-radius: 100px; width: 95%; margin-top: 1rem; margin-bottom: 10rem;"
+                                alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -7rem;">Clinica Médica </h3>
+
+                            <p>A clínica médica é um dos ramos mais amplos da Medicina. Geralmente, os médicos
+                                especializados em
+                                clínica médica são o primeiro contato de um paciente que possui, por exemplo, uma queixa
+                                de
+                                dor,
+                                mas que não sabe como dar continuidade ao seu tratamento ou a que especialidade médica
+                                recorrer.
+                            </p>
+
+                            <p>Uma clínica médica é um tipo de estabelecimento voltado para serviços ambulatoriais. Ser
+                                um
+                                paciente ambulatorial significa que você pode ir para casa depois de receber
+                                atendimento.
+                            </p>
+
+                            <p>Freqüentemente, você precisa marcar uma consulta para ir a uma clínica médica, de modo
+                                geral,
+                                você pode ir a uma clínica médica para os seguintes tipos de serviços relacionados à
+                                saúde:
+                                <span style="color: var(--green);">cuidados médicos de rotina,</span> cuidado preventivo
+                                e
+                                <span style="color: var(--green);">atenção médica quando você está doente.</span>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim do Serviço 3-->
+
+                <!-- Inicio do Serviço 4-->
+                <div class="conteudo" id="serv4" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/cirurgia_geral.webp"
+                                style="border-radius: 100px; width: 86%; margin-top: 1rem; margin-bottom: 10rem;"
+                                alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -7rem;">Cirurgia Geral </h3>
+                            <p>Cirurgia Geral é uma disciplina de cirurgia com um núcleo central de conhecimento que
+                                abrange
+                                anatomia, fisiologia, metabolismo, imunologia, nutrição, patologia, cicatrização de
+                                feridas,
+                                choque e reanimação, terapia intensiva e neoplasia, que são comuns a todas as
+                                especialidades
+                                cirúrgicas. </p>
+
+                            <p>Um cirurgião geral tem conhecimento especializado e experiência relacionados ao
+                                diagnóstico,
+                                manejo pré-operatório, operatório e pós-operatório, incluindo o manejo de complicações.
+                            </p>
+
+                            <p>Situações de trauma como quedas, acidentes envolvendo veículos ou agressões físicas são
+                                de
+                                cuidado da Cirurgia geral, mas o ramo também se encarrega das operações e cirurgias
+                                gastrointestinais (estômago, baço, pâncreas, fígado, intestinos, vesícula e etc.) e da
+                                parede
+                                abdominal (hérnias), sejam estas urgências ou não.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fim do Serviço 4-->
+
+                <!-- Inicio do Serviço 5 -->
+                <div class="conteudo" id="serv5" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/cirurgia_cabeca.webp"
+                                style="border-radius: 100px; width: 86%; margin-top: 1rem; margin-bottom: 10rem;"
+                                alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -7rem;">Cirurgia Cabeça e Pescoço </h3>
+                            <p>A cirurgia de cabeça e pescoço é uma especialidade na área de medicina de ouvido, nariz e
+                                garganta (otorrinolaringologia) que se concentra no tratamento cirúrgico de doenças de
+                                cabeça e
+                                pescoço. </p>
+
+                            <p>A cirurgia de cabeça e pescoço pode ser um tratamento para diferentes tipos de câncer de
+                                cabeça e
+                                pescoço. O câncer de cabeça e pescoço pode afetar a cavidade nasal, seios da face,
+                                glândulas
+                                salivares, garganta, lábios, amígdalas e laringe.
+                            </p>
+
+                            <p>Outras condições tratadas por cirurgia de cabeça e pescoço incluem: <span
+                                    style="color: var(--green);">nervos comprimidos,</span> tontura intensa e enjôo,
+                                <span style="color: var(--green);">pressão na medula espinhal,</span> Problemas na
+                                coluna
+                                superior, <span style="color: var(--green);">lesões de cabeça e pescoço,</span>
+                                sinusite,
+                                <span style="color: var(--green);">Infecções crônicas de ouvido,</span> Ronco e apnéia
+                                do
+                                sono,
+                                <span style="color: var(--green);">Problemas de amígdalas, </span>Problemas de mandíbula
+                                e
+                                <span style="color: var(--green);">Condições da tireóide.</span>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim do Serviço 5-->
+
+                <!-- Inicio do Serviço 6-->
+                <div class="conteudo" id="serv6" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/cirurgia_plastica.webp"
+                                style="border-radius: 100px; width: 86%; margin-top: 1rem; margin-bottom: 10rem;"
+                                alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -7rem;">Cirurgia Plástica </h3>
+                            <p> A cirurgia plástica é uma especialidade cirúrgica envolvida tanto na melhora da
+                                aparência de
+                                uma
+                                pessoa quanto na reconstrução de defeitos nos tecidos faciais e corporais causados ​​por
+                                doenças, traumas ou distúrbios do parto. </p>
+
+                            <p>A cirurgia plástica restaura e melhora a função, bem como a aparência. Pode envolver
+                                cirurgia
+                                em
+                                qualquer parte da anatomia, exceto o sistema nervoso central, incluindo: <span
+                                    style="color: var(--green);">câncer de pele,</span> cicatrizes, <span
+                                    style="color: var(--green);">queimaduras, </span> marcas de nascença, <span
+                                    style="color: var(--green);">remoção de tatuagens,</span> esqueleto facial, <span
+                                    style="color: var(--green);">orelhas deformadas,</span> fenda palatina e <span
+                                    style="color: var(--green);">lábio leporino.</span>
+                            </p>
+
+                            <p>Portanto a cirurgia plástica pode ser dividida entre procedimentos reconstrutivos,
+                                estéticos
+                                e
+                                melhora de funcionamento.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim do Serviço 6-->
+
+                <!-- Inicio do Serviço 7-->
+                <div class="conteudo" id="serv7" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/dermatologia.webp"
+                                style="border-radius: 100px; width: 86%; margin-top: 1rem; margin-bottom: 10rem;"
+                                alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -7rem;">Dermatologia </h3>
+                            <p>O dermatologista é o especialista médico que você deve consultar se tiver algum problema
+                                significativo de pele. A dermatologia é a ciência que se preocupa com o diagnóstico e
+                                tratamento
+                                das doenças da pele, dos cabelos e das unhas .</p>
+
+                            <p>A pele é o órgão maior e mais visível do corpo. Ele reflete a saúde do corpo e atua como
+                                uma
+                                barreira contra lesões e bactérias . Infelizmente, em um momento ou outro, quase todo
+                                mundo
+                                tem
+                                algum tipo de doença de pele.
+                            </p>
+
+                            <p>As doenças de pele mais comuns são: câncer de pele, verrugas, infecções fúngicas,
+                                dermatite,
+                                Psoríase, acne, dermatite das mãos, eczema atópico e herpes labial.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim do Serviço 7-->
+
+                <!-- Inicio do Serviço 8-->
+                <div class="conteudo" id="serv8" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/fisiatria.webp"
+                                style="border-radius: 100px; width: 86%; margin-top: 1rem; margin-bottom: 10rem;"
+                                alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -7rem;">Fisiatria - Tratamento de dor </h3>
+                            <p>Os médicos de Medicina Física e Reabilitação, também conhecidos como fisiatras, tratam
+                                uma
+                                ampla variedade de condições médicas que afetam o cérebro, medula espinhal, nervos,
+                                ossos,
+                                articulações, ligamentos, músculos e tendões. </p>
+
+                            <p>Especificamente, médicos fisiatras: <span style="color: var(--green);">tratam pacientes
+                                    de
+                                    todas as idades,</span> possuem ampla experiência médica que lhes permita tratar
+                                condições incapacitantes ao longo da vida de uma pessoa,<span
+                                    style="color: var(--green);">
+                                    diagnosticar e tratar a dor como resultado de uma lesão,</span> doença ou condição
+                                incapacitante, <span style="color: var(--green);">determinar e liderar um plano de
+                                    tratamento,</span> tratam a pessoa como um todo, <span
+                                    style="color: var(--green);">não
+                                    apenas a área do problema.</span>
+                            </p>
+
+                            <p>Dependendo da lesão, doença ou condição incapacitante, alguns médicos fisiatras podem
+                                tratar
+                                seus pacientes usando os seguintes procedimentos e serviços:
+
+                                <span style="color: var(--green);">Estudos de EMG / Condução Nervosa</span>
+
+                                Procedimentos guiados por ultrassom
+
+                                <span style="color: var(--green);">Procedimentos guiados por fluoroscopia</span>
+
+                                Injeções na coluna
+
+                                <span style="color: var(--green);">Discografia, descompressão de disco e
+                                    vertebroplastia</span>
+
+                                Estimuladores de nervos, bloqueios e procedimentos de ablação - periféricos e espinhais
+
+                                <span style="color: var(--green);">Injeções de articulações</span>
+
+                                Proloterapia
+
+                                <span style="color: var(--green);">Tratamento de espasticidade (injeções de fenol e
+                                    toxina
+                                    botulínica, teste de bomba de baclofeno intratecal e implantes)</span>
+
+                                Biópsia de nervo e músculo
+
+                                <span style="color: var(--green);">Medicina manual e tratamento osteopático</span>
+
+                                Próteses e órteses
+
+                                <span style="color: var(--green);">Medicina alternativa complementar (ou seja,
+                                    acupuntura,
+                                    etc.)</span>
+
+                                Avaliação de deficiência / deficiência
+
+                                <span style="color: var(--green);">Consultoria médico-legal</span>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim do Serviço 8-->
+
+                <!-- Inicio do Serviço 9-->
+                <div class="conteudo" id="serv9" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/estomago.webp"
+                                style="border-radius: 100px; width: 86%; margin-top: 1rem; margin-bottom: 10rem;"
+                                alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -7rem;">Gastroenterologia </h3>
+                            <p>Gastroenterologia é o estudo da função normal e das doenças do esôfago, estômago,
+                                intestino
+                                delgado, cólon e reto, pâncreas, vesícula biliar, dutos biliares e fígado.</p>
+
+                            <p> Envolve uma compreensão detalhada da ação normal (fisiologia) dos órgãos
+                                gastrointestinais,
+                                incluindo o movimento do material através do estômago e intestino (motilidade), a
+                                digestão e
+                                absorção de nutrientes no corpo, a remoção de resíduos do sistema e a função do fígado
+                                como
+                                um órgão digestivo.
+                            </p>
+
+                            <p>Inclui condições comuns e importantes como: <span style="color: var(--green);">pólipos e
+                                    câncer de cólon,</span> hepatite, <span style="color: var(--green);">refluxo
+                                    gastroesofágico (azia),</span> úlcera péptica, <span
+                                    style="color: var(--green);">colite,</span> doença da vesícula biliar e do trato
+                                biliar,
+                                <span style="color: var(--green);">problemas nutricionais,</span> síndrome do intestino
+                                irritável (SII) e <span style="color: var(--green);">pancreatite. </span>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim do Serviço 9-->
+
+                <!-- Inicio do Serviço 10-->
+                <div class="conteudo" id="serv10" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/giinecologista.webp"
+                                style="border-radius: 100px; width: 86%; margin-top: 1rem; margin-bottom: 10rem;"
+                                alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -7rem;">Ginecologia </h3>
+                            <p>A ginecologia é um ramo da medicina. Sendo uma especialidade própria para estudar, cuidar
+                                e tratar a saúde do aparelho reprodutor feminino. </p>
+
+                            <p>Além disso, ela cuida também da saúde das mamas e faz os principais diagnósticos das
+                                doenças que afetam as mulheres, ou seja, é uma especialidade atenta à saúde da mulher
+                                como um todo.
+                            </p>
+
+                            <p>As doenças ginecológicas mais comuns são:
+
+                                <span style="color: var(--green);">Cistos de ovário,</span>
+                                Endometriose,
+                                <span style="color: var(--green);">Mioma uterino,</span>
+                                Doença inflamatória pélvica,
+                                <span style="color: var(--green);">Candidíase,</span>
+                                Vaginose e
+                                <span style="color: var(--green);">ISTs (Infecções Sexualmente Transmissíveis).</span>
+                            </p>
+
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: 0rem; width: 70rem;">Obstetrícia </h3>
+                            <p>A obstetrícia acaba sendo uma parte da própria ginecologia. Isso porque ela é responsável
+                                por acompanhar o período gestacional, o parto e até o pós-parto. </p>
+
+                            <p>Apesar de que, geralmente, as especializações aproximam bastante as duas áreas e, por
+                                isso, hoje a maioria dos ginecologistas são, também, obstetras.
+                            </p>
+
+                            <p>Mas é importante saber que a ginecologia é um campo mais amplo que abrange os cuidados da
+                                saúde da mulher. Enquanto que a obstetrícia tem uma responsabilidade mais restrita e um
+                                foco mais pontual que é o período de gestação, parto e pós-parto.
+                            </p>
+
+                        </div>
+
+                        <div class="imagem">
+                            <img src="img/Obstretria.webp"
+                                style="border-radius: 100px; width: 50rem; margin-top: 1rem; margin-bottom: 10rem; margin-left: 10rem;"
+                                alt="">
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <!-- Fim do Serviço 10-->
+
+                <!-- Inicio do Serviço 11-->
+                <div class="conteudo" id="serv11" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/med_estetica.webp"
+                                style="border-radius: 100px; width: 86%; margin-top: 1rem; margin-bottom: 10rem;"
+                                alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -7rem;">Medicina Estética </h3>
+                            <p>A Medicina Estética compreende todos os procedimentos médicos que visam melhorar a
+                                aparência física e a satisfação do paciente, desde procedimentos estéticos não invasivos
+                                até minimamente invasivos. </p>
+
+                            <p>A especialidade da Medicina Estética não se limita aos dermatologistas e cirurgiões
+                                plásticos, pois médicos de todas as especialidades procuram oferecer serviços que
+                                atendam às necessidades e desejos estéticos de seus pacientes.
+                            </p>
+
+                            <p>Alguns procedimentos de Medicina Estética são realizados sob anestesia local, enquanto
+                                alguns procedimentos nem requerem anestésicos.
+                            </p>
+
+                            <p>Os procedimentos estéticos consistem em: <span style="color: var(--green);">injeções de
+                                    neurotoxinas e preenchedores dérmicos, </span> cascas químicas, <span
+                                    style="color: var(--green);">tratamentos de dermatologia cosmética,</span>
+                                microdermoabrasão, <span style="color: var(--green);">contorno Corporal e Tratamento da
+                                    Celulite, </span> nutrição, <span style="color: var(--green);">transplante de
+                                    cabelo,</span> redução de cabelo, <span style="color: var(--green);">enxerto de
+                                    gordura / plasma rico em plaquetas,</span> laser e IPL, <span
+                                    style="color: var(--green);">gestão de cicatrizes, </span> tratamento Venoso e <span
+                                    style="color: var(--green);">ginecologia Cosmética.</span>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim do Serviço 11-->
+
+                <!-- Inicio do Serviço 12-->
+                <div class="conteudo" id="serv12" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/neurologia.webp"
+                                style="border-radius: 100px; width: 86%; margin-top: 1rem; margin-bottom: 10rem;"
+                                alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -7rem;">Neurologia </h3>
+
+                            <p>A Neurologia é a especialidade médica que estuda e trata dos distúrbios estruturais do
+                                sistema nervoso: cérebro, medula, nervos e músculos. </p>
+
+
+                            <p>Um neurologista é um médico com treinamento especializado no diagnóstico, tratamento e
+                                gerenciamento de distúrbios do cérebro e do sistema nervoso. </p>
+
+                            <p>Demtre as doenças tratadas estão: <span style="color: var(--green);">alzheimer,</span>
+                                esclerose lateral amiotrófica, <span style="color: var(--green);">concussão,</span>
+                                epilepsia, <span style="color: var(--green);">enxaqueca,</span> esclerose múltipla,
+                                <span style="color: var(--green);">doença de Parkinson</span> e acidente vascular
+                                cerebral (AVC).
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim do Serviço 12-->
+
+                <!-- Inicio do Serviço 13-->
+                <div class="conteudo" id="serv13" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/otorrino.webp"
+                                style="border-radius: 100px; width: 86%; margin-top: 1rem; margin-bottom: 10rem;"
+                                alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -7rem;">Otorrinolaringologia </h3>
+                            <p>A Otorrinolaringologia é uma especialidade médica voltada para nariz, seios da face,
+                                garganta e ouvidos. </p>
+
+                            <p>Essa especialidade médica remonta ao século 19, quando os médicos reconheceram que a
+                                cabeça e o pescoço continham uma série de sistemas interligados. Os médicos
+                                desenvolveram técnicas e ferramentas para examinar e tratar problemas de cabeça e
+                                pescoço, eventualmente formando uma especialidade médica.
+                            </p>
+
+                            <p>Por esses motivos, a consulta a um otorrino é imprescindível para a manutenção de uma boa
+                                saúde, com um bom diagnóstico e tratamento adequado para problemas que possam vir a
+                                surgir.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim do Serviço 13-->
+
+                <!-- Inicio do Serviço 14-->
+                <div class="conteudo" id="serv14" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/fisioterapia.webp"
+                                style="border-radius: 100px; width: 86%; margin-top: 1rem; margin-bottom: 10rem;"
+                                alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -7rem;">Ortopedia </h3>
+                            <p>A Ortopedia é um ramo da medicina que se concentra no cuidado do sistema
+                                musculoesquelético. Esse sistema é composto de músculos e ossos, bem como de
+                                articulações, ligamentos e tendões. </p>
+
+                            <p>Os problemas no sistema musculoesquelético podem estar presentes desde o nascimento ou
+                                podem ocorrer como resultado de lesões ou desgaste devido à idade.
+                            </p>
+
+                            <p>Dentre as condições mais comuns estão:
+                                <span style="color: var(--green);">dor nas articulações da artrite,</span>
+                                fraturas ósseas,
+                                <span style="color: var(--green);">lesões de tecidos moles (músculos, tendões e
+                                    ligamentos),</span>
+                                dor nas costas,
+                                <span style="color: var(--green);">dor de pescoço,</span>
+                                dor e problemas no ombro, como bursite,
+                                <span style="color: var(--green);">síndrome do túnel carpal,</span>
+                                uso excessivo e lesões esportivas, incluindo tendinite , rupturas do menisco e rupturas
+                                do ligamento cruzado anterior (LCA),
+                                <span style="color: var(--green);">doenças congênitas, como pé torto e escoliose.</span>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim do Serviço 14-->
+
+                <!-- Inicio do Serviço 15-->
+                <div class="conteudo" id="serv15" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/pediatria.webp"
+                                style="border-radius: 100px; width: 86%; margin-top: 1rem; margin-bottom: 10rem;"
+                                alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -7rem;">Pediatria </h3>
+                            <p>Um pediatra é um médico que gerencia os cuidados físicos, comportamentais e mentais de
+                                crianças desde o nascimento até os 18 anos. O pediatra é treinado para diagnosticar e
+                                tratar uma ampla gama de doenças infantis, desde pequenos problemas de saúde a doenças
+                                graves. </p>
+
+                            <p>Seu pediatra verá seu bebê muitas vezes desde o nascimento até os 2 anos de idade e
+                                anualmente dos 2 aos 5 anos para "consultas de puericultura". Após os 5 anos, seu
+                                pediatra provavelmente verá seu filho todos os anos para exames anuais.
+                            </p>
+
+                            <p>Ao cuidar de seu filho, o pediatra irá:
+                                <span style="color: var(--green);">Fazer exames fisicos,</span>
+                                Aplicar imunizações recomendadas,
+                                <span style="color: var(--green);">Certificar de que seu filho está atingindo marcos de desenvolvimento em crescimento,
+                                comportamento e habilidades,</span>
+                                Diagnosticar e tratar as doenças, infecções, lesões e outros problemas de saúde do seu filho,
+                                <span style="color: var(--green);">Dar orientações sobre saúde, segurança e nutrição da criança,</span>
+                                Respondar suas perguntas sobre o crescimento e desenvolvimento do seu filho,
+                                <span style="color: var(--green);">Consultar e colaborar com um especialista caso seu filho adoeça e precise de cuidados além
+                                da experiência do pediatra</span>
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim do Serviço 15-->
+
+                <!-- Inicio do Serviço 16-->
+                <div class="conteudo" id="serv16" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/psiquiatria.webp"
+                                style="border-radius: 100px; width: 86%; margin-top: 1rem; margin-bottom: 10rem;"
+                                alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -7rem;">Psiquiatria </h3>
+                            <p>A psiquiatria é o ramo da medicina voltado para o diagnóstico, tratamento e prevenção de transtornos mentais, emocionais e comportamentais. </p>
+
+                            <p>Um psiquiatra é um médico especializado em saúde mental, incluindo transtornos por uso de substâncias. Os psiquiatras são qualificados para avaliar os aspectos mentais e físicos dos problemas psicológicos.
+                            </p>
+
+                            <p>As pessoas procuram ajuda psiquiátrica por vários motivos. Os problemas podem ser repentinos, como um ataque de pânico, alucinações assustadoras, pensamentos suicidas ou ouvir "vozes". 
+                            </p>
+
+                            <p>Ou podem ser de longo prazo, como sentimentos de tristeza, desesperança ou ansiedade que nunca parecem desaparecer, fazendo com que a vida cotidiana pareça distorcida ou fora de controle.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim do Serviço 16-->
+
+                <!-- Inicio do Serviço 17-->
+                <div class="conteudo" id="serv17" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/urologista.webp"
+                                style="border-radius: 100px; width: 65%; margin-top: 1rem; margin-bottom: 10rem;"
+                                alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -7rem;">Urologia </h3>
+                            <p>A Urologia é uma parte dos cuidados de saúde que trata das doenças do trato urinário masculino e feminino (rins, ureteres, bexiga e uretra). Também lida com os órgãos específicamente masculinos (pênis, testículos, escroto, próstata, etc.). Como os problemas de saúde nessas partes do corpo podem acontecer a qualquer pessoa, a saúde urológica é importante. </p>
+
+                            <p>Os médicos que possuem especialização nesta área são os urologistas, sendo treinados para diagnosticar, tratar e acompanhar pacientes com distúrbios urológicos
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim do Serviço 17-->
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Fim da seção Especialidades Médicas -->
+
+    <!-- Inicio da Seção Especialidades Médicas -->
+
+    <section class="servicos" id="servicos2">
+
+        <div class="conteudo">
+            <h3 style="text-align: center; margin-top: -7rem;">Tratamentos Complementares </h3>
+
+            <p> Tratamento complementar é um tipo de prática que visa prevenir ou ajudar no tratamento de doenças ou condições adversas de saúde.</p>
+
+           <p> São técnicas reconhecidas pela Organização Mundial da Saúde (OMS), baseadas em conhecimentos tradicionais usados de forma integrada à medicina convencional, mas não a substituindo.</p>
+
+            <p>O centro médico Cupecê oferece 6 especialidades médicas para seus pacientes.
+            </p>
+
+            <p> Para saber quais elas são além de obter mais detalhes sobre elas, pressione o botão "Selecionar"
+                a
+                seguir e selecione o tratamento desejado.</p>
+
+        </div>
+
+        <div class="conteudo">
+
+            <select class="serv" name="teste" onchange="javascript:mostraInfo2(this);">
+                <option value="0" hidden>Selecionar</option>
+                <option value="18">Fisioterapia e RPG</option>
+                <option value="19">Fonoaudiologia</option>
+                <option value="20">Nutricionista</option>
+                <option value="21">Odontologia</option>
+                <option value="22">Psicologia</option>
+                <option value="23">Quiropraxia</option>
+            </select>
+
+        </div>
+
+        <!-- Inicio do Serviço Acupuntura Médica-->
+
+        <div class="row">
+
+            <div class="row">
+                <div class="conteudo" id="serv18" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/fisio.webp"
+                                style="border-radius: 100px; width: 86%; margin-top: 1rem; margin-bottom: 10rem;"
+                                alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -7rem;">Fisioterapia </h3>
+                            <p>É a especialidade que trata as disfunções osteomusculares e tendíneas causadas por lesões esportivas, desgastes, traumas, recuperações cirúrgicas e doenças congênitas. Podendo aliviar a dor, restabelecer funções, fortalecer os músculos, corrigir deformidades e prevenir novas lesões. </p>
+
+                            <p>Tendo como objetivo o retorno às atividades com qualidade de vida e bem estar.
+                            </p>
+
+                            <p>Os tratamentos incluem recursos terapêuticos como <span style="color: var(--green);">eletroterapia,</span> alongamento, <span style="color: var(--green);">fortalecimento muscular</span> e terapias manuais.
+                            </p>
+
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: 4rem;">RPG </h3>
+                            <p>A Reeducação Postural Global, conhecida popularmente por RPG, consiste na reorganização postural do corpo, através do alongamento do tecido muscular retraído, proporcionando benefícios para os músculos que mantêm a postura. </p>
+
+                            <p>A RPG trata das desarmonias do corpo humano, sempre levando em consideração as necessidades individuais de cada paciente. Vale lembrar que a RPG é uma técnica realizada, exclusivamente, por fisioterapeutas.
+                            </p>
+
+                            <p>Apresenta resultados positivos para diversos problemas, por meio da reeducação do corpo. Podendo auxiliar no tratamento de patologias, como problemas ortopédicos, <span style="color: var(--green);">labirintite,</span> hérnia de disco, <span style="color: var(--green);">artrite,</span> artrose, <span style="color: var(--green);">distúrbios circulatórios,</span> entre outros, sendo indicada não apenas para quem sente dores, mas também para quem busca mais equilíbrio e bem-estar.
+                            </p>
+
+                        </div>
+
+                        <div class="imagem">
+                            <img src="img/rpg.webp"
+                                style="border-radius: 100px; width: 60rem; margin-top: 10rem; margin-bottom: 10rem;"
+                                alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Fim do Serviço 1-->
+
+                <!-- Inicio do Serviço 2-->
+                <div class="conteudo" id="serv19" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/fono.webp"
+                                style="border-radius: 100px; width: 90%; margin-bottom: 2rem;" alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -7rem;">Fonoaudiologia </h3>
+                            <p>O fonoaudiólogo é um profissional da saúde e atua em pesquisa, orientação, perícias, prevenção, avaliação, diagnóstico e tratamento fonoaudiológico na área da comunicação oral e escrita, voz, audição e equilíbrio, sistema nervoso e sistema estomatognático incluindo a região cérvicofacial.
+                            </p>
+
+                            <p>Este profissional tem ampla autonomia, não sendo subordinado ou mero auxiliar de outras áreas do conhecimento ou especialidades, pode atuar sozinho ou em conjunto com outros profissionais de saúde em clínicas, hospitais, centros especializados em diagnósticos,
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Fim do Serviço 2-->
+
+                <!-- Inicio do Serviço 3-->
+                <div class="conteudo" id="serv20" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/nutricionista.webp"
+                                style="border-radius: 100px; width: 95%; margin-top: -7rem; margin-bottom: 10rem;"
+                                alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -7rem;">Nutricionista </h3>
+
+                            <p>O nutricionista é especialista no uso da alimentação e nutrição para promover a saúde e controlar doenças.
+                            </p>
+
+                            <p>Esses especialistas aconselham as pessoas sobre o que comer para ter um estilo de vida saudável ou atingir um objetivo específico relacionado à saúde.
+                            </p>
+
+                            <p>Nutricionistas clínicos trabalham em ambientes clínicos, muitas vezes em situações individuais com pacientes internados e ou ambulatoriais, bem como com suas famílias, avaliando, projetando e implementando estratégias dietéticas e terapias nutricionais . 
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim do Serviço 3-->
+
+                <!-- Inicio do Serviço 4-->
+                <div class="conteudo" id="serv21" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/dentista.webp"
+                                style="border-radius: 100px; width: 75%; margin-top: 1rem; margin-bottom: 10rem;"
+                                alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -7rem;">Odontologia </h3>
+                            <p>Odontologia ou medicina dentária é a área da saúde humana que estuda e trata do sistema estomatognático - compreende o crânio, a face, pescoço e cavidade bucal, abrangendo ossos, musculatura mastigatória, articulações, dentes e tecidos.  </p>
+
+                            <p>Muito mais do que ensinar a população como escovar os dentes adequadamente, o dentista é um perito da Odontologia que pode, inclusive, salvar vidas.
+                            </p>
+
+                            <p>Isso porque alguns distúrbios genéticos, infecções aparentemente simples e até complicações de problemas bucais podem afetar gravemente a vida das pessoas.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fim do Serviço 4-->
+
+                <!-- Inicio do Serviço 5 -->
+                <div class="conteudo" id="serv22" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/terapia.webp"
+                                style="border-radius: 100px; width: 86%; margin-top: 1rem; margin-bottom: 10rem;"
+                                alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -10rem;">Psicologia </h3>
+                            <p>A psicologia é o estudo da mente e do comportamento. Abrange as influências biológicas, pressões sociais e fatores ambientais que afetam como as pessoas pensam, agem e sentem. </p>
+
+                            <p>Obter uma compreensão mais rica e profunda da psicologia pode ajudar as pessoas a ter insights sobre suas próprias ações, bem como a compreender melhor as outras pessoas.
+                            </p>
+
+                            <p>A aplicação mais óbvia da psicologia é no campo da saúde mental, onde os psicólogos usam princípios, pesquisas e descobertas clínicas para ajudar os clientes a gerenciar e superar os sintomas de sofrimento mental e doenças psicológicas.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim do Serviço 5-->
+
+                <!-- Inicio do Serviço 6-->
+                <div class="conteudo" id="serv23" style="display: none;">
+                    <div class="home">
+                        <div class="imagem">
+                            <img src="img/quiropraxia.webp"
+                                style="border-radius: 100px; width: 86%; margin-top: 1rem; margin-bottom: 10rem;"
+                                alt="">
+                        </div>
+
+                        <div class="conteudo">
+
+                            <h3 style="text-align: center; margin-top: -9rem;">Quiropraxia</h3>
+                            <p> Quiroprático é o profissional de saúde voltado para o diagnóstico e tratamento de doenças neuromusculares, com ênfase no tratamento por meio de ajuste manual e ou manipulação da coluna vertebral . </p>
+
+                            <p>A maioria dos quiropráticos busca reduzir a dor e melhorar a funcionalidade dos pacientes, bem como educá-los sobre como podem cuidar de sua própria saúde por meio de exercícios, ergonomia e outras terapias para tratar a dor nas costas.
+                            </p>
+
+                            <p>O conceito de tratamento da Quiropraxia é restabelecer a mobilidade normal da coluna vertebral, que por sua vez alivia a irritação do nervo espinhal e ou restabelece os reflexos alterados.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim do Serviço 6-->
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Fim da seção Especialidades Médicas -->
+
+
+    <!-- Início da seção Localização  -->
+
+    <section class="localizacao" id="localizacao">
+
+        <h1 class="cabecalho"> <span>Nossa </span> Localização </h1>
+
+        <div class="row">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4610.815378796928!2d-46.66407718502037!3d-23.661922184633106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5aafe4668aa9%3A0xe1aab367efaf582f!2sCentro%20M%C3%A9dico%20Cupec%C3%AA!5e1!3m2!1spt-BR!2sbr!4v1630588360069!5m2!1spt-BR!2sbr"
+                width="1200" height="500" style="border:0; margin: auto;" allowfullscreen="" loading="lazy"></iframe>
+
+        </div>
+
+    </section>
+
+    <!-- Fim da Seção Localização -->
+
+    <!-- Início da Seção agendamento   -->
+
+    <section class="agendamento" id="agendamento">
+
+        <h1 class="cabecalho"> <span>Agende </span> sua Consulta </h1>
+
+        <div class="row">
+
+            <div class="imagem">
+                <img src="img/agendar.webp" alt="">
+            </div>
+
+            <div class="conteudo">
+
+                <p>Para agendar a sua consulta, é necessário realizar o cadastro ou login neste site, através da barra
+                    de navegação, ou clicando <a href="login.html" class="link_agenda_capa">Neste botão</a> </p>
+
+                <p>Nesta agenda você poderá filtrar através do médico, tratamento desejado, datas, entre outras formas,
+                    para que de forma rápida você realize seu agendamento.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Fim da Seção agendamento -->
+
+    <!-- Início da seção rodapé -->
+
+    <section class="rodape">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Nossos Serviços</h3>
+                <a href="#servicos"> <i class="fas fa-chevron-right"></i> Especialidades Médicas </a>
+                <a href="#servicos2"> <i class="fas fa-chevron-right"></i> Terapias Complementares</a>
+                <a href="#agendamento"> <i class="fas fa-chevron-right"></i> Agendamento </a>
+            </div>
+
+            <div class="box">
+                <h3>Contato</h3>
+                <a href="#"> <i class="fas fa-phone"></i> (11) 5562-9005 </a>
+                <a href="#"> <i class="fas fa-phone"></i> (11) 5565-0298 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> cmc295@terra.com.br </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> São Paulo, SP - 04384-090 </a>
+            </div>
+
+            <div class="box">
+                <h3>Redes Sociais</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            </div>
+
+        </div>
+
+        <div class="creditos"> Desenvolvido por <span>Centro Médico Cupecê</span> | Todos os Direitos Reservados </div>
+
+    </section>
+
+    <!-- Fim da Seção Rodapé -->
+
+    <!-- custom js file link  -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

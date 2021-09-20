@@ -1,0 +1,804 @@
+
+:root {
+    --green:#16a085;
+    --black:#444;
+    --light-color:#777;
+    --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border:.2rem solid var(--green);
+}
+
+* {
+    font-family: sans-serif;
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding:2rem 9%;
+}
+
+section:nth-child(even) {
+    background: #f5f5f5;
+}
+
+.cabecalho {
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    color:var(--black);
+    font-size: 5rem;
+    letter-spacing: .4rem;
+}
+
+.cabecalho span {
+    text-transform: uppercase;
+    color:var(--green);
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    border:var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    color:var(--green);
+    cursor: pointer;
+    font-size: 1.7rem;
+    background: rgb(255, 255, 255);
+}
+
+.escolha {
+    margin-top: 1rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    border:var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    color:var(--green);
+    cursor: pointer;
+    font-size: 1.8rem;
+    background: #fff;
+}
+
+.escolha:hover {
+    background: var(--green);
+    color:#fff;
+}
+
+.botao span {
+    padding:.7rem 1rem;
+    border-radius: .5rem;
+    background: var(--green);
+    color:#fff;
+    margin-left: .5rem;
+}
+
+.botao:hover {
+    background: var(--green);
+    color:#fff;
+}
+
+.botao:hover span {
+    color: var(--green);
+    background:#fff;
+    margin-left: 1rem;
+}
+
+.header {
+    padding:2rem 9%;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.header .logo {
+    font-size: 2.4rem;
+    color: var(--black);
+    display: flex;
+    align-items: center;  
+    margin-left: -1rem;
+}
+
+
+.header .logo_img {
+    width: 70px;
+    padding-right: 10px;
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    color: var(--light-color);
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+    color: var(--green);
+}
+
+#menu-botao {
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color:var(--green);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.home,
+.servicos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding-top: 10rem;
+}
+
+.home .imagem,
+.servicos .imagem{
+    flex:1 1 45rem;
+}
+
+.home .imagem img,
+.servicos .imagem img{
+    width: 90%;
+}
+
+.login .imagem {
+    flex:1 1 45rem;
+}
+
+.login .imagem img {
+    width: 50rem;
+    display: flex;
+    margin: 0 auto;
+}
+
+.home .conteudo,
+.servicos .conteudo {
+    flex:1 1 60rem;
+}
+
+.home .conteudo h3,
+.servicos .conteudo h3{
+    font-size: 4.5rem;
+    color:var(--black);
+    line-height: 1.8;
+    text-shadow: var(--text-shadow);
+}
+
+.home .conteudo p,
+.servicos .conteudo p{
+    font-size: 1.9rem;
+    color:var(--light-color);
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.icones-container {
+    display: grid;
+    gap:2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.icones-container .icones {
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.icones-container .icones i {
+    font-size: 4.5rem;
+    color:var(--green);
+    padding-bottom: .7rem;
+}
+
+.icones-container .icones h3 {
+    font-size: 4.5rem;
+    color:var(--black);
+    padding: .5rem 0;
+    text-shadow: var(--text-shadow);
+}
+
+.icones-container .icones p {
+    font-size: 1.7rem;
+    color:var(--light-color);
+}
+
+.serv {
+    width: 95%; 
+    margin-left: 2rem; 
+    height: 5rem; 
+    font-size: 2.2rem; 
+    background:  #fff;
+    color:  var(--green); 
+    border: 1px solid var(--green); 
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.serv:hover {
+    width: 95%; 
+    margin-left: 2rem; 
+    height: 5rem; 
+    font-size: 2.2rem; 
+    background: var(--green); 
+    color:  #fff;
+    border: 1px solid var(--green); 
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.sele_horario {
+    border: none; 
+    margin-top: 1rem;
+    margin-bottom: -1.8rem;
+    color: black;
+    width: 95%; 
+    height: 5rem; 
+    font-size: 2.4rem; 
+}
+
+.sele_convenio{
+    border: none; 
+    margin-top: 2rem;
+    margin-bottom: -1.8rem;
+    color: black;
+    width: 95%; 
+    height: 5rem; 
+    font-size: 2.4rem; 
+}
+
+
+.cadastro .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap:2rem;
+}
+
+.cadastro .box-container .box {
+    background:#fff;
+    border-radius: .5rem;
+    border: 2px solid black;
+    padding: 2.5rem;
+    text-align: center;
+    
+}
+
+.cadastro .box-container .box img {
+    padding-bottom: .5rem;
+}
+
+.agenda .horario-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    gap:1rem;
+}
+
+.agenda .horario-container .horario {
+    background:#fff;
+    border-radius: .5rem;
+    border: 2px solid black;
+    padding: 1rem;
+    text-align: center;
+    
+}
+
+.agenda .horario-container .horario:hover {
+    background:var(--green); 
+    color: #fff;
+    border-radius: .5rem;
+    border: 2px solid black;
+    text-align: center;
+    
+}
+
+.agenda .horario-container .horario:active {
+    background:var(--green); 
+    color: #fff;
+    border-radius: .5rem;
+    border: 2px solid black;
+    text-align: center;
+    
+}
+
+.selecionado:active {
+    background:var(--green); 
+    color: #fff;
+    border-radius: .5rem;
+    border: 2px solid black;
+    text-align: center;
+}
+
+
+.localizacao .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+
+.medicos .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:2rem;
+}
+
+.medicos .box-container .box {
+    text-align: center;
+    background:#fff;
+    border-radius: .5rem;
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    padding:2rem;
+}
+
+.medicos .box-container .box img {
+    height: 20rem;
+    border:var(--border);
+    border-radius: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.medicos .box-container .box h3 {
+    color:var(--black);
+    font-size: 2.5rem;
+}
+
+.medico_tipo {
+    color:var(--green);
+    font-size: 1.5rem;
+}
+
+
+.agendamento .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+ 
+.agendamento .row .imagem {
+    flex:1 1 45rem;
+}
+
+.agendamento .row .imagem img {
+    width: 80%;
+}
+
+.agendamento .conteudo {
+    flex:1 1 45rem;
+}
+
+.agendamento .conteudo h3 {
+    font-size: 4.5rem;
+    color:var(--black);
+    line-height: 1.8;
+    text-shadow: var(--text-shadow);
+}
+
+.agendamento .conteudo p {
+    font-size: 1.9rem;
+    color:var(--light-color);
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.login .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.login .row form {
+    margin: 0 auto;
+    flex: 0.8 1 10rem;
+    background: #fff;
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.login .row form h3 {
+    color:var(--black);
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.login .row form .box {
+    width: 100%;
+    margin:.7rem 0;
+    border-radius: .5rem;
+    border:var(--border);
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    padding: 1rem;
+}
+
+.login .row form .botao {
+    padding:1rem 4rem;
+    background-color: var(--green); 
+    color: #fff;
+}
+
+.login .row form .botao:hover {
+    padding:1rem 4rem;
+    background-color: rgb(101, 255, 204);
+    color: var(--green); 
+}
+
+.login .row form .escolha {
+    padding:1rem 0.2rem;
+    width: 31%;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-right: 1%;
+    justify-content: space-between;
+}
+
+.cadastro .row,
+.agenda .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+
+.medicos .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap:2rem;
+}
+
+.cadastro .row form,
+.agenda .row form {
+    margin: 0 auto;
+    flex: 1 1 10rem;
+    background: #fff;
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.medicos .row form {
+    margin: 0 auto;
+    flex: 1 1 10rem;
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+
+.cadastro .row form h3,
+.agenda .row form h3,
+.medicos .row form h3 {
+    color:var(--black);
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.cadastro .row form .box,
+.agenda .row form .horario,
+.medicos .row form .horario {
+    width: 100%;
+    margin:.7rem 0;
+    border-radius: .5rem;
+    border:var(--border);
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    padding: 1rem;
+}
+
+.cadastro .row form .botao {
+    padding:1rem 4rem;
+    background-color: var(--green); 
+    color: #fff;
+}
+
+.cadastro .row form .botao:hover {
+    padding:1rem 4rem;
+    background-color: rgb(101, 255, 204);
+    color: var(--green); 
+}
+
+.cadastro .row form .escolha {
+    padding:1rem 0.2rem;
+    width: 31%;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-right: 1%;
+    justify-content: space-between;
+}
+
+.cadastro .row form{
+    flex:1 1 45rem;
+    background: #fff;
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.cadastro .row form h3{
+    color:var(--black);
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.cadastro .row form .box{
+    width: 100%;
+    margin:.7rem 0;
+    border-radius: .5rem;
+    border:var(--border);
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    padding: 1rem;
+}
+
+.cadastro .row form .btn{
+    padding:1rem 4rem;
+}
+
+.rodape .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap:2rem;
+}
+
+.rodape .box-container .box h3 {
+    font-size: 2.5rem;
+    color:var(--black);
+    padding: 1rem 0;
+}
+
+.rodape .box-container .box a {
+    display: block;
+    font-size: 1.5rem;
+    color:var(--light-color);
+    padding: 1rem 0;
+}
+
+.rodape .box-container .box a i {
+    padding-right: .5rem;
+    color:var(--green);
+}
+
+.rodape .box-container .box a:hover i {
+    padding-right:2rem;
+}
+
+.rodape .creditos {
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color:var(--light-color);
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.rodape .creditos span {
+    color:var(--green);
+}
+
+
+.imagem-login {
+    width: 400px;
+}
+
+.consultas .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 30rem));
+    gap:2rem;
+}
+
+.consultas .box-container .box{
+    background:#fff;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    padding: 2.5rem;
+}
+
+.consultas .box-container .box h3{
+    color: var(--black);
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+}
+
+.consultas .box-container .box p{
+    color: var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+.btn_cancelar{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .9rem;
+    border: 2px solid rgb(185, 34, 34);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    color: rgb(185, 34, 34);
+    cursor: pointer;
+    font-size: 1.7rem;
+    background: #fff;
+}
+
+
+.btn_cancelar:hover{
+    background: rgb(185, 34, 34);
+    color:#fff;
+}
+
+.horarios {
+    margin-top: 2rem; 
+    width:70rem;
+}
+
+.medico_ativado {
+    cursor: pointer;
+    background: #fff;
+}
+
+.medico_ativado:hover {
+    cursor: pointer;
+    background: rgb(168, 255, 233);
+}
+
+.botao_agenda_capa {
+    border:1px solid var(--green); 
+    border-radius: 15px; 
+    padding:0.5rem 2rem; 
+    background-color: #fff;
+    
+}
+
+.botao_agenda_capa:hover {
+    border:1px solid var(--green); 
+    border-radius: 15px; 
+    padding:0.5rem 2rem; 
+    color: #fff;
+    background-color: var(--green);
+}
+
+.link_agenda_capa {
+    border:1px solid var(--green); 
+    border-radius: 15px; 
+    padding:1rem 2rem; 
+    background-color: #fff;
+    font-size: 2.2rem;
+    color: var(--green);
+    text-decoration: none;
+}
+
+.link_agenda_capa:hover {
+    border:1px solid var(--green); 
+    border-radius: 15px; 
+    padding:1rem 2rem; 
+    background-color: var(--green); 
+    font-size: 2.2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* media queries  */
+
+@media (max-width: 1315px) {
+
+    .home .imagem,
+    .servicos .imagem {
+        display: none;
+    }
+
+    .agendamento .imagem {
+        display: none;
+    }
+
+
+}
+
+
+@media (max-width:991px) {
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+    
+    
+
+}
+
+@media (max-width:1268px) {
+
+    #menu-botao{
+        display: initial;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top:115%; right: 2rem;
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow);
+        width: 30rem;
+        border: var(--border);
+        background: #fff;
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: none;
+    }
+
+    .header .navbar.active {
+        transform: scale(1);
+        opacity: 1;
+        transition: .2s ease-out;
+    }
+
+    .header .navbar a {
+        font-size: 2rem;
+        display: block;
+        margin:2.5rem;
+    }
+
+}
+
+@media (max-width:450px) {
+
+    html{
+        font-size: 50%;
+    }
+
+    .imagem-login {
+        width: 100%;
+    }
+
+
+}
+
